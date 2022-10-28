@@ -1,0 +1,49 @@
+.information {
+  @extend %grid;
+
+  // .information__about
+
+  &__about {
+    grid-column: span 12;
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      grid-column: span 6;
+    }
+  }
+
+  // .information__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }  
+
+  // .information__list-item
+
+  &__list-item {
+  }  
+
+  // .information__list-item-img
+
+  &__list-item-img {
+    width: 100%;
+    max-width: 100%;
+
+    .information__list-item:not(:last-child) & {
+      margin-bottom: em(64);
+    }
+  }  
+
+  // .information__support
+
+  &__support {
+    grid-column: span 12;
+
+    grid-column: span 12;
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      grid-column: 8 / span 5;
+    }
+  }
+}

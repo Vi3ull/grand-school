@@ -1,0 +1,153 @@
+.btn {
+  --btnPaddingLeft: 0;
+  --btnPaddingRight: 0;
+  --btnMinWidth: #{rem(148)};
+  --btnMinHeight: #{rem(36)};
+  --btnBorderColor: transparent;
+  --btnBgColor: transparent;
+  --btnColor: var( --primary );
+  --btnBorderColorHover: transparent;
+  --btnBgColorHover: transparent;
+  --btnColorHover: var( --primary-dark );
+  --btnBorderColorActive: transparent;
+  --btnBgColorActive: var( --grays-pale-3 );
+  --btnColorActive: var( --primary-dark );
+  // --btnBorderColorDisabled: ;
+  // --btnBgColorDisabled: ;
+  // --btnColorDisabled: ;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var( --btnBgColor );
+  background-image: var( --btnBgImage );
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: rem(18);
+  border: rem(1) solid var( --btnBorderColor );
+  border-radius: var( --btnBorderRadius );
+  color: var(--btnColor);
+  font-family: map-get($fonts, inter);
+  font-size: rem(18);
+  font-weight: 600;
+  text-decoration: none;
+  min-width: var( --btnMinWidth );
+  min-height: var( --btnMinHeight );
+  padding-left: var( --btnPaddingLeft );
+  padding-right: var( --btnPaddingRight );
+  transition: border-color .3s linear,color .3s linear,background-color .3s linear;
+
+  &:hover, &:focus, &:focus-visible {
+    background-color: var(--btnBgColorHover);
+    border-color: var(--btnBorderColorHover);
+    color: var(--btnColorHover);
+  }
+
+  &:active {
+    background-color: var(--btnBgColorActive);
+    border-color: var(--btnBorderColorActive);
+    color: var(--btnColorActive);
+  }
+
+  &--primary {
+    --btnPaddingLeft: #{rem(32)};
+    --btnPaddingRight: #{rem(32)};
+    --btnMinWidth: #{rem(123)};
+    --btnMinHeight: #{rem(60)};
+    --btnBorderColor: transparent;
+    --btnBgColor: var( --primary );
+    --btnColor: var( --white );
+    --btnBorderColorHover: transparent;
+    --btnBorderRadius: #{rem(8)};
+    --btnBgColorHover: var( --primary-hover );
+    --btnColorHover: var( --white );
+    --btnBorderColorActive: transparent;
+    --btnBgColorActive: var( --primary-dark );
+    --btnColorActive: var( --white );
+    // --btnBorderColorDisabled: var( --color-accent );
+    // --btnBgColorDisabled: var( --color-accent );
+    // --btnColorDisabled: var( --color-white );
+  }
+
+  &--secondary {
+    --btnPaddingLeft: #{rem(24)};
+    --btnPaddingRight: #{rem(24)};
+    --btnMinWidth: #{rem(107)};
+    --btnMinHeight: #{rem(46)};
+    --btnBorderColor: transparent;
+    --btnBorderRadius: #{rem(8)};
+    --btnBgColor: var( --secondary );
+    --btnColor: var( --primary );
+    --btnBorderColorHover: transparent;
+    --btnBgColorHover: var( --secondary );
+    --btnColorHover: var( --primary-dark );
+    --btnBorderColorActive: transparent;
+    --btnBgColorActive: var( --grays-pale-3 );
+    --btnColorActive: var( --primary-dark );
+    // --btnBorderColorDisabled: var( --color-accent );
+    // --btnBgColorDisabled: var( --color-accent );
+    // --btnColorDisabled: var( --color-white );
+  }
+
+  &--white {
+    --btnPaddingLeft: #{rem(32)};
+    --btnPaddingRight: #{rem(32)};
+    --btnMinWidth: #{rem(123)};
+    --btnMinHeight: #{rem(60)};
+    --btnBorderColor: transparent;
+    --btnBgColor: var( --white );
+    --btnColor: var( --primary );
+    --btnBorderColorHover: transparent;
+    --btnBorderRadius: #{rem(8)};
+    --btnBgColorHover: var( --secondary );
+    --btnColorHover: var( --primary-dark );
+    --btnBorderColorActive: transparent;
+    --btnBgColorActive: var( --white );
+    --btnColorActive: var( --grays-olive );
+    // --btnBorderColorDisabled: var( --color-accent );
+    // --btnBgColorDisabled: var( --color-accent );
+    // --btnColorDisabled: var( --color-white );
+  }
+
+  &--default {
+    --btnPaddingLeft: 0;
+    --btnPaddingRight: 0;
+    --btnMinWidth: auto;
+    --btnMinHeight: #{rem(36)};
+    --btnBorderColor: transparent;
+    --btnBgColor: transparent;
+    --btnColor: var( --primary );
+    --btnBorderColorHover: var( --primary-hover );
+    --btnBorderRadius: 0;
+    --btnBgColorHover: transparent;
+    --btnColorHover: var( --primary-hover );
+    --btnBorderColorActive: var( --primary-dark );
+    --btnBgColorActive: transparent;
+    --btnColorActive: var( --primary-dark );
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: rem(4);
+
+    &:hover, &:active {
+      & .btn__icon {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &--width {
+    &--full {
+      width: 100%;
+    }
+  }
+
+  // .btn__icon
+
+  &__icon {
+    margin-left: rem(8);
+    transform: translateX(rem(-4));
+    transition: transform .3s linear;
+    flex-shrink: 0;
+  }
+}

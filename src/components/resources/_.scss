@@ -1,0 +1,32 @@
+.resources {
+  
+  // .resources__list
+
+  &__list {
+    @extend %grid;
+    --rowGap: #{rem(16)};
+  }
+
+  // .resources__list-item
+
+  &__list-item {
+    grid-column: span 12;
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      grid-column: span 6;
+    }
+  }
+
+  // .resources__list-title
+
+  &__list-title {
+    display: flex;
+    align-items: center;
+  }
+
+  // .resources__icon
+
+  &__icon {
+    color: var( --grays-pale );
+  }
+}

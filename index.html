@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand School</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/components/app.scss">
+  </head>
+  <body class="page">
+    <header class="header container">
+      <div class="header__area-top">
+        <div class="header__logo">
+          <img
+            class="header__logo-img"
+            src="/assets/img/logo.png" 
+            width="128" 
+            height="46" 
+            alt="Логотип"
+          >
+        </div>
+        <form class="header__search">
+          <div class="form-component">
+            <label for="form-search" class="form-component__label visually-hidden">Поиск по сайту</label>
+            <div class="form-component__control">
+              <svg width="24" height="24" class="header__search-icon">
+                <use xlink:href="/assets/img/icons.svg#search"></use>
+              </svg>
+              <input 
+                type="search"
+                placeholder="Поиск по сайту"
+                id="form-search"
+                class="input header__search-input"
+              >
+            </div>            
+          </div>
+        </form>
+        <div class="header__link-wrapper">
+          <a href="#" class="btn btn--secondary">
+            <svg width="20" height="20" class="margin--r-12">
+              <use xlink:href="/assets/img/icons.svg#user"></use>
+            </svg>
+            <span>Регистрация и вход</span>
+          </a>
+          <a href="#" class="btn btn--secondary">
+            <svg width="20" height="20" class="margin--r-12">
+              <use xlink:href="/assets/img/icons.svg#tel"></use>
+            </svg>
+            <span>Заказать звонок</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__area-bottom">
+        <div class="main-menu">
+          <nav class="main-menu__nav"> 
+            <ul class="main-menu__list">
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link main-menu__link--active">О нас</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link">Юридические услуги</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link">Вебинары</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link">Курсы</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link">Статьи</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link">Партнёрство</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link">Новости</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" class="main-menu__link">СДО</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__contacts">
+          <a href="mailto:info@grandschool.net" class="header__contacts-link">
+            <svg width="20" height="20" class="margin--r-10">
+              <use xlink:href="/assets/img/icons.svg#mail"></use>
+            </svg>
+            <span>info@grandschool.net</span>
+          </a>
+          <a href="tel:88003331543" class="header__contacts-link">
+            <svg width="20" height="20" class="margin--r-10">
+              <use xlink:href="/assets/img/icons.svg#tel"></use>
+            </svg>
+            <span>8 800 333-15-43</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <main class="page__content container">
+      <section class="about margin--b-80">
+        <div class="about__content wysiwyg">
+          <h1>О нас</h1>
+          <p>Один из ведущих учебных центров России. Работаем с 2006 года, за это время обучили больше 10 000 человек по 60 образовательным программам.</p>
+          <p>Наши спикеры — профессиональная команда экспертов, специалистов и практиков, общение с которыми позволит вам не только получить полезные знания, но и перенять многолетний опыт.</p>
+          <p>Официальный партнёр «Международного учебно-методического центра финансового мониторинга» (МУМЦФМ).</p>
+          <p>Мы предлагаем пути решения проблем с практической точки зрения, не ограничиваясь теорией и сухим законодательством.</p>
+          <p>Обучаясь в «Grand School» вы приобретаете реальный опыт, который поможет преуспеть в работе и бизнесе.</p>
+        </div>
+        <ul class="about__images">
+          <li class="about__images-item">
+            <picture>
+              <img src="/assets/img/about/doc-1.png" alt="" class="about__images-picture" width="100%" height="auto">
+            </picture>
+            <a data-fslightbox href="/assets/img/about/doc-1.png" target="_blank" class="btn btn--default about__images-btn" title="Смотреть в полном размере">
+              <span>Лицензия в полном размере</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="about__images-item">
+            <picture>
+              <img src="/assets/img/about/doc-2.png" alt="" class="about__images-picture" width="100%" height="auto">
+            </picture>
+            <a data-fslightbox href="/assets/img/about/doc-2.png" target="_blank" class="btn btn--default about__images-btn" title="Смотреть в полном размере">
+              <span>Соглашение с МУМЦФМ</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="working margin--b-80">
+        <div class="wysiwyg">
+          <h2>Направления деятельности</h2>
+        </div>
+        <ul class="working__list">
+          <li class="working__list-item link">
+            <span>Дистанционное обучение</span>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="working__list-item link">
+            <span>Аттестация</span>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="working__list-item link">
+            <span>Вебинары</span>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="working__list-item link">
+            <span>Юридическое сопровождение</span>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="working__list-item link">
+            <span>Разработка документации</span>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="working__list-item link">
+            <span>Лицензирование</span>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cooperation margin--b-80">
+        <div class="wysiwyg">
+          <h2>Сотрудничаем любым удобным способом</h2>
+        </div>
+        <ul class="cooperation__list">
+          <li class="cooperation__list-item">
+            <div class="cooperation__img-wrapper">
+              <picture>
+                <img src="/assets/img/cooperation/cooperation-1.png" alt="" class="cooperation__img">
+              </picture>
+            </div>
+            <a href="#" class="cooperation__list-btn btn btn--default">
+              <span>Онлайн-заявка</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="cooperation__list-item">
+            <div class="cooperation__img-wrapper">
+              <picture>
+                <img src="/assets/img/cooperation/cooperation-2.png" alt="" class="cooperation__img">
+              </picture>
+            </div>
+            <a href="#" class="cooperation__list-btn btn btn--default">
+              <span>Звонок нам</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="cooperation__list-item">
+            <div class="cooperation__img-wrapper">
+              <picture>
+                <img src="/assets/img/cooperation/cooperation-3.png" alt="" class="cooperation__img">
+              </picture>
+            </div>
+            <a href="#" class="cooperation__list-btn btn btn--default">
+              <span>Посещение офиса</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="resources margin--b-80">
+        <div class="wysiwyg">
+          <h2>Наши ресурсы</h2>
+        </div>
+        <ul class="resources__list">
+          <li class="resources__list-item link">
+            <div class="resources__list-title">
+              <svg width="48" height="48" class="resources__icon margin--r-12">
+                <use xlink:href="/assets/img/icons.svg#telegram"></use>
+              </svg>
+              <span>Telegram</span>
+            </div>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="resources__list-item link">
+            <div class="resources__list-title">
+              <svg width="48" height="48" class="resources__icon margin--r-12">
+                <use xlink:href="/assets/img/icons.svg#dzen"></use>
+              </svg>
+              <span>Дзен</span>
+            </div>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="resources__list-item link">
+            <div class="resources__list-title">
+              <svg width="48" height="48" class="resources__icon margin--r-12">
+                <use xlink:href="/assets/img/icons.svg#vk"></use>
+              </svg>
+              <span>Вконтакте</span>
+            </div>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="resources__list-item link">
+            <div class="resources__list-title">
+              <svg width="48" height="48" class="resources__icon margin--r-12">
+                <use xlink:href="/assets/img/icons.svg#youtube"></use>
+              </svg>
+              <span>YouTube</span>
+            </div>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+          <li class="resources__list-item link">
+            <div class="resources__list-title">
+              <svg width="48" height="48" class="resources__icon margin--r-12">
+                <use xlink:href="/assets/img/icons.svg#grand-class"></use>
+              </svg>
+              <span>GrandClass.net</span>
+            </div>
+            <a href="#" class="btn btn--white">Подробнее</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="staff margin--b-80">
+        <div class="wysiwyg">
+          <h2>Наша команда</h2>
+        </div>
+        <ul class="staff__list">
+          <li class="staff__list-item">
+            <article class="staff__card">
+              <div class="staff__card-img-wrapper">
+                <picture>
+                  <img src="/assets/img/staff/staff-1.png" alt="Фото: Ирина Тумашова - Руководитель отдела консалтинга" class="staff__card-img" width="160px" height="160px">
+                </picture>
+              </div>
+              <div class="staff__card-name">
+                <h3>Ирина Тумашова</h3>
+              </div>
+              <div class="staff__card-description">
+                <p>Руководитель отдела консалтинга</p>
+              </div>
+              <div class="staff__card-contacts">
+                <a href="mailto:i.kolesova@grandschool.net" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#mail"></use>
+                  </svg>
+                  <span>i.kolesova@grandschool.net</span>
+                </a>
+                <a href="tel:8 800 333-15-43p478" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#tel"></use>
+                  </svg>
+                  <span>8 800 333-15-43 доб. 478</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="staff__list-item">
+            <article class="staff__card">
+              <div class="staff__card-img-wrapper">
+                <picture>
+                  <img src="/assets/img/staff/staff-2.png" alt="Фото: Владимир Сущенко - Менеджер по работе с клиентами отдела консалтинга" class="staff__card-img" width="160px" height="160px">
+                </picture>
+              </div>
+              <div class="staff__card-name">
+                <h3>Владимир Сущенко</h3>
+              </div>
+              <div class="staff__card-description">
+                <p>Менеджер по работе с клиентами отдела консалтинга</p>
+              </div>
+              <div class="staff__card-contacts">
+                <a href="mailto:v.sushchenko@grandschool.net" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#mail"></use>
+                  </svg>
+                  <span>v.sushchenko@grandschool.net</span>
+                </a>
+                <a href="tel:8 800 333-15-43p477" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#tel"></use>
+                  </svg>
+                  <span>8 800 333-15-43 доб. 477</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="staff__list-item">
+            <article class="staff__card">
+              <div class="staff__card-img-wrapper">
+                <picture>
+                  <img src="/assets/img/staff/staff-3.png" alt="Фото: Максим Юнчис - Менеджер проектов отдела консалтинга" class="staff__card-img" width="160px" height="160px">
+                </picture>
+              </div>
+              <div class="staff__card-name">
+                <h3>Максим Юнчис</h3>
+              </div>
+              <div class="staff__card-description">
+                <p>Менеджер проектов отдела консалтинга</p>
+              </div>
+              <div class="staff__card-contacts">
+                <a href="mailto:m.yunchis@grandschool.net" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#mail"></use>
+                  </svg>
+                  <span>m.yunchis@grandschool.net</span>
+                </a>
+                <a href="tel:8 800 333-15-43p475" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#tel"></use>
+                  </svg>
+                  <span>8 800 333-15-43 доб. 475</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="staff__list-item">
+            <article class="staff__card">
+              <div class="staff__card-img-wrapper">
+                <picture>
+                  <img src="/assets/img/staff/staff-4.png" alt="Фото: Татьяна Долина - Ведущий юрист отдела консалтинга" class="staff__card-img" width="160px" height="160px">
+                </picture>
+              </div>
+              <div class="staff__card-name">
+                <h3>Татьяна Долина</h3>
+              </div>
+              <div class="staff__card-description">
+                <p>Ведущий юрист отдела консалтинга</p>
+              </div>
+              <div class="staff__card-contacts">
+                <a href="mailto:t.dolina@grandschool.net" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#mail"></use>
+                  </svg>
+                  <span>t.dolina@grandschool.net</span>
+                </a>
+                <a href="tel:8 800 333-15-43p479" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#tel"></use>
+                  </svg>
+                  <span>8 800 333-15-43 доб. 479</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="staff__list-item">
+            <article class="staff__card">
+              <div class="staff__card-img-wrapper">
+                <picture>
+                  <img src="/assets/img/staff/staff-5.png" alt="Фото: Олеся Михальцова - Юрист отдела консалтинга" class="staff__card-img" width="160px" height="160px">
+                </picture>
+              </div>
+              <div class="staff__card-name">
+                <h3>Олеся Михальцова</h3>
+              </div>
+              <div class="staff__card-description">
+                <p>Юрист отдела консалтинга</p>
+              </div>
+              <div class="staff__card-contacts">
+                <a href="mailto:o.mikhaltsova@grandschool.net" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#mail"></use>
+                  </svg>
+                  <span>o.mikhaltsova@grandschool.net</span>
+                </a>
+                <a href="tel:8 800 333-15-43p476" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#tel"></use>
+                  </svg>
+                  <span>8 800 333-15-43 доб. 476</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="staff__list-item">
+            <article class="staff__card">
+              <div class="staff__card-img-wrapper">
+                <picture>
+                  <img src="/assets/img/staff/staff-6.png" alt="Фото: Ульяна Ванеева - Директор ЧОУ ДПО «Гранд Скул»" class="staff__card-img" width="160px" height="160px">
+                </picture>
+              </div>
+              <div class="staff__card-name">
+                <h3>Ульяна Ванеева</h3>
+              </div>
+              <div class="staff__card-description">
+                <p>Директор ЧОУ ДПО «Гранд Скул»</p>
+              </div>
+              <div class="staff__card-contacts">
+                <a href="#" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#mail"></use>
+                  </svg>
+                  <span>...</span>
+                </a>
+                <a href="tel:8 800 333-15-43p475" class="staff__card-contacts-link">
+                  <svg width="20" height="20" class="staff__card-contacts-icon margin--r-10">
+                    <use xlink:href="/assets/img/icons.svg#tel"></use>
+                  </svg>
+                  <span>8 800 333-15-43 доб. 475</span>
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="partners margin--b-80">
+        <div class="partners__title wysiwyg">
+          <h2>С нами работают</h2>
+          <a href="#" class="partners__btn btn btn--default">
+            <span>Стать партнёром</span>
+            <svg width="14" height="13" class="btn__icon">
+              <use xlink:href="/assets/img/icons.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="partners__carousel carousel scrollbar js-carousel">
+          <ul class="partners__wrapper carousel__wrapper js-carousel-wrapper">
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Sber.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Gazprombank.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Gazprom.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Alfa.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Ural.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Tele2.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Polus.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Yakut.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+            <li class="partners__slide carousel__slide js-carousel-slide">
+              <picture>
+                <img 
+                  src="/assets/img/partners/Ural.png" 
+                  alt="" 
+                  loading="lazy" 
+                  class="partners__slide-img"
+                >
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="information margin--b-80">
+        <div class="information__about wysiwyg">
+          <h2>Сведения об образовательной организации</h2>
+          <ul class="information__list">
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Учредительные документы</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Место нахождения, режим, график работы и прочая контактная информация</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Структура</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Устав</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Свидетельство ОГРН</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Свидетельство ИНН</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Учредительные документы</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Порядок приема, отчисления и восстановления обучающихся</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Положение об организации образовательного процесса</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Учредительные документы</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Положение о контроле за санит.-эпид. Правилами</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Учредительные документы</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Учредительные документы</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="information__list-item">
+              <a href="#" class=" btn btn--default">
+                <span>Учредительные документы</span>
+                <svg width="14" height="13" class="btn__icon">
+                  <use xlink:href="/assets/img/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="information__support wysiwyg">
+          <h2>Работаем при поддержке</h2>
+          <ul class="information__list">
+            <li class="information__list-item">
+              <img src="/assets/img/information/RFBank.png" alt="Логотип: Банк России" class="information__list-item-img">
+            </li>
+            <li class="information__list-item">
+              <img src="/assets/img/information/Sci.png" alt="Логотип: Министретсво науки и высшего образования РФ" class="information__list-item-img">
+            </li>
+            <li class="information__list-item">
+              <img src="/assets/img/information/Rosfin.png" alt="Логотип: РОСФИНМОНИТОРИНГ" class="information__list-item-img">
+            </li>
+            <li class="information__list-item">
+              <img src="/assets/img/information/MUMCFM.png" alt="Логотип: MUMCFM" class="information__list-item-img">
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mailing margin--b-80">
+        <div class="mailing__form-wrapper wysiwyg">
+          <h3>Читай нашу рассылку и будь в курсе новостей и скидок</h3>
+          <form class="mailing__form">
+            <div class="form-component">
+              <label for="name" class="form-component__label visually-hidden">Имя</label>
+              <div class="form-component__control">
+                <input 
+                  type="text"
+                  placeholder="Имя"
+                  id="name"
+                  class="input"
+                >
+              </div>            
+            </div>
+            <div class="form-component">
+              <label for="email" class="form-component__label visually-hidden">Электронная почта</label>
+              <div class="form-component__control">
+                <input 
+                  type="email"
+                  placeholder="Электронная почта"
+                  id="email"
+                  class="input"
+                >
+              </div>            
+            </div>
+            <button type="submit" class="btn btn--white btn--width--full mailing__form-btn">
+              Подписаться
+            </button>
+          </form>
+        </div>
+        <div class="mailing__messages">
+          <div class="mailing__carousel carousel scrollbar js-carousel carousel--type--vertical">
+            <ul class="mailing__wrapper carousel__wrapper js-carousel-wrapper">
+              <li class="mailing__slide carousel__slide js-carousel-slide">
+                <div class="mailing__slide-wrapper">
+                  <p>Скидка 10% на ПВК</p>
+                </div>
+              </li>
+              <li class="mailing__slide carousel__slide js-carousel-slide">
+                <div class="mailing__slide-wrapper">
+                  <p>14 июля вступила в силу новая (93-я) редакция Федерального закона N 115-ФЗ</p>
+                </div>
+              </li>
+              <li class="mailing__slide carousel__slide js-carousel-slide">
+                <div class="mailing__slide-wrapper">
+                  <p>Новый курс для бухгалтеров ломбарда</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer container">
+      <div class="footer__area-contacts">
+        <div class="footer__title">
+          <h3>Контакты</h3>
+        </div>
+        <a href="tel:8 800 333-15-43" class="footer__link">
+          <svg width="20" height="20" class="footer__link-icon margin--r-10">
+            <use xlink:href="/assets/img/icons.svg#tel"></use>
+          </svg>
+          <span>8 800 333-15-43</span>
+        </a>
+        <div class="footer__description">
+          <p>Звонок по России бесплатный</p>
+        </div>
+        <a href="mailto:info@grandschool.net" class="footer__link">
+          <svg width="20" height="20" class="footer__link-icon margin--r-10">
+            <use xlink:href="/assets/img/icons.svg#mail"></use>
+          </svg>
+          <span>info@grandschool.net</span>
+        </a>
+      </div>
+      <div class="footer__area-social">
+        <ul class="footer__social-list">
+          <li class="footer__social-list-item">
+            <a href="#" class="btn btn--secondary footer__social-btn">
+              <svg width="48" height="48">
+                <use xlink:href="/assets/img/icons.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="#" class="btn btn--secondary footer__social-btn">
+              <svg width="48" height="48">
+                <use xlink:href="/assets/img/icons.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="#" class="btn btn--secondary footer__social-btn">
+              <svg width="48" height="48">
+                <use xlink:href="/assets/img/icons.svg#dzen"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="#" class="btn btn--secondary footer__social-btn">
+              <svg width="48" height="48">
+                <use xlink:href="/assets/img/icons.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__area-address">
+        <div class="footer__title">
+          <h3>Центральный офис</h3>
+        </div>
+        <div class="footer__description">
+          <p>196084, г. Санкт-Петербург, пр. Московский, д. 97, офис 507</p>
+        </div>
+        <a href="#" class="btn btn--secondary">Открыть Яндекс.Карты</a>
+      </div>
+      <div class="footer__area-documents">
+        <ul class="footer__documents-list">
+          <li class="footer__documents-list-item">
+            <a href="#" class="btn btn--default">
+              <span>Реквизиты</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__documents-list-item">
+            <a href="#" class="btn btn--default">
+              <span>Договор оферта</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__documents-list-item">
+            <a href="#" class="btn btn--default">
+              <span>Пользовательское соглашение</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__documents-list-item">
+            <a href="#" class="btn btn--default">
+              <span>Политика конфиденциальности</span>
+              <svg width="14" height="13" class="btn__icon">
+                <use xlink:href="/assets/img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/components/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+.staff {
+  
+  // .staff__list
+
+  &__list {
+    @extend %grid;
+    --rowGap: #{rem(32)};
+    
+    @media screen and (min-width: map-get($screens, lg)) {
+      --columnGap: #{rem(32)};
+    }
+  }
+
+  // .staff__list-item
+
+  &__list-item {
+    grid-column:  span 12;
+    margin-top: em(96);
+
+    @media screen and (min-width: map-get($screens, md)) {
+      grid-column: span 6;
+    }
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      grid-column: span 4;
+    }
+
+    @media screen and (min-width: map-get($screens, 2xl)) {
+      grid-column: span 3;
+    }
+  }
+
+  // .staff__card
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var( --grays-pale-3 );
+    border-radius: rem(16);
+    padding: em(96) em(32) em(28) em(32);
+  }
+
+  // .staff__card-img-wrapper
+
+  &__card-img-wrapper {
+    position: absolute;
+    top: em(-96);
+    width: rem(160);
+    height: rem(160);
+  }
+
+  // .staff__card-img
+
+  &__card-img {
+    border-radius: rem(16);
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+  // .staff__card-name
+
+  &__card-name {
+    font-family: map-get($fonts, inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(32);
+    max-width: rem(160);
+    color: var( --grays-olive );
+  }
+
+  // .staff__card-description
+
+  &__card-description {
+    font-family: map-get($fonts, inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin-top: em(16);
+    margin-bottom: em(48);
+    color: var( --grays-pale );
+  }
+
+  // .staff__card-contacts
+
+  &__card-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  // .staff__card-contacts-link
+
+  &__card-contacts-link {
+    display: inline-flex;
+    align-items: center;
+    font-family: map-get($fonts, inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(28);
+    text-decoration: none;
+    color: var( --grays-olive );
+
+    @media screen and (min-width: map-get($screens, 2xl)) {
+      font-size: rem(18);
+    }    
+  }
+
+    // .staff__card-contacts-link
+
+    &__card-contacts-icon {
+      flex-shrink: 0;
+    }
+}

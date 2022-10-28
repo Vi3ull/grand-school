@@ -1,0 +1,105 @@
+.mailing {
+  @extend %grid; 
+  --columnGap: 0;
+  --rowGap: 0;
+  background-color: var( --grays-pale-3 );
+  border-radius: rem(32);
+
+  // .mailing__form-wrapper
+
+  &__form-wrapper {
+    grid-column: span 12;
+    padding: em(32);
+    
+    @media screen and (min-width: map-get($screens, lg)) {
+      grid-column: span 6;
+      border-right: rem(0.5) solid var( --grays-pale-2 );
+    }
+  }
+
+  // .mailing__form
+
+  &__form {
+  }
+
+  // .mailing__form-btn
+  
+  .mailing__form-btn {
+    margin-top: em(24);
+  }
+
+  // .mailing__messages
+
+  &__messages {
+    display: none;
+    position: relative;
+    grid-column: span 6;
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      display: block;
+      border-left: rem(0.5) solid var( --grays-pale-2 );
+    }
+  }
+
+  // .mailing__carousel
+
+  &__carousel {
+    --carouselSlidesGap: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: em(32);
+    padding: em(32);
+  }
+
+  // .mailing__wrapper
+
+  &__wrapper {
+    max-width: rem(690);
+  }
+
+  // .mailing__slide
+
+  &__slide {
+    &:last-child {
+      padding-bottom: em(32);
+    }
+  }
+
+  // .mailing__slide-wrapper
+
+  &__slide-wrapper {
+    position: relative;
+    font-family: map-get($fonts, inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(22);
+    line-height: rem(40);
+    color: var( --white );
+    background-color: var( --primary );
+    border-radius: rem(42);
+    width: fit-content;
+    padding: rem(16) rem(24);
+
+    @media screen and (min-width: map-get($screens, 2xl)) {
+      font-size: rem(28);
+      line-height: rem(46);
+      padding: rem(20) rem(28);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: rem(-11);
+      display: block;
+      width: rem(32);
+      height: rem(34);
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='34' viewBox='0 0 32 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 33.8883C15.2649 22.5485 13.3198 0.588867 13.3198 0.588867L31.6344 22.2335C21.9935 29.7934 6.02561 33.2583 0 33.8883Z' fill='%2327ACA1'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

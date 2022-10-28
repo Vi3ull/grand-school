@@ -1,0 +1,31 @@
+:root {
+  --primary: #27ACA1;
+  --primary-hover: #32BCB1;
+  --primary-dark: #04665E;
+  --secondary: #DCF6F4;
+  --grays-pale: #5D647D;
+  --grays-pale-2: #CFD7DC;
+  --grays-pale-3: #F6F8FA;
+  --grays-olive: #0C0C3D;
+  --grays-background: #F8FBFE;
+  --white: #ffffff;
+  --page: #ffffff;
+  --container-padding: #{em(16)};
+}
+
+$screens: (
+  xs: 360px,
+  xxs: 480px, 
+  sm: 540px, 
+  md: 768px, 
+  lg: 992px, 
+  xl: 1280px,
+  2xl: 1536px,
+ ) !default; 
+
+$z-layers: (
+);
+
+$fonts : (
+  inter: ('Inter', sans-serif),
+);

@@ -1,0 +1,34 @@
+%form-field {
+  --controlBorderColor: var(--grays-pale-2);
+  background: var(--white);
+  border: rem(1) solid var(--controlBorderColor);
+  border-radius: rem(8);
+  color: var(--grays-pale);
+  font-family: map-get($fonts, inter);
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: rem(28);
+  padding: rem(16);
+  transition: border-color .3s linear;
+  width: 100%;
+
+  &:focus {
+    --controlBorderColor: var(--primary-hover);
+    outline: none;
+  }
+}
+
+%grid {
+  --columnCount: 12;
+  --columnGap: 0;
+  --rowGap: 0;
+  display: grid;
+  grid-template-columns: repeat(var( --columnCount ), 1fr);
+  column-gap: var( --columnGap );
+  row-gap: var( --rowGap );
+
+  @media screen and (min-width: map-get($screens, sm)) {
+    --columnGap: #{rem(32)};
+    --rowGap: #{rem(32)}; 
+  }
+}

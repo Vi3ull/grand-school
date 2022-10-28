@@ -1,0 +1,10 @@
+.page {
+  font-family: map-get($fonts, inter);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--page);
+
+  &__content {
+    flex-grow: 1;
+  }
+}

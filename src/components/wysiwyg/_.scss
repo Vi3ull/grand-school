@@ -1,0 +1,61 @@
+.wysiwyg {
+  font-family: map-get($fonts, inter);
+
+  & h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: rem(42);
+    line-height: rem(54);
+    color: var( --grays-olive );
+    margin-bottom: rem(16);
+    
+    @media screen and (min-width: map-get($screens, lg)) {
+      font-size: rem(64);
+      line-height: rem(76);
+      margin-bottom: rem(32);
+    }
+  }
+
+  & h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(34);
+    color: var( --grays-olive );
+    margin-bottom: rem(16);
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      font-size: rem(36);
+      line-height: rem(46);
+      margin-bottom: rem(32);
+    }
+  }
+
+  & h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(26);
+    color: var( --grays-olive );
+    margin-bottom: rem(12);
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      font-size: rem(24);
+      line-height: rem(32);
+      margin-bottom: rem(24);
+    }
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(30);
+    margin-bottom: rem(10);
+
+    @media screen and (min-width: map-get($screens, lg)) {
+      font-size: rem(22);
+      line-height: rem(36);
+      margin-bottom: rem(22);
+    }    
+  }
+}

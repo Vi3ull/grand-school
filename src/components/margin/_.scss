@@ -1,0 +1,15 @@
+.margin {
+  &--r {
+    &-10 {
+      margin-right: rem(10)
+    }
+    &-12 {
+      margin-right: rem(12)
+    }
+  }
+  &--b {
+    &-80 {
+      margin-bottom: em(80);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.form-component {
+
+  & + & {
+    margin-top: em(12);
+  }
+
+  // .form-component__label
+
+  &__label {
+    color: var(--color-second);
+    font-family: map-get($fonts, inter);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: rem(16);
+    user-select: none;
+  }
+
+  // .form-component__control
+
+  &__control {
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // border: 1px solid var(--grays-pale-2);
+    // border-radius: 8px;
+  }
+}

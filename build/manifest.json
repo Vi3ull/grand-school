@@ -1,0 +1,25 @@
+{
+  "index.html": {
+    "file": "assets/index.6ca1cc34.js",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/components/carousel/_.js"
+    ],
+    "css": [
+      "assets/index.d3993bca.css"
+    ]
+  },
+  "src/components/carousel/_.js": {
+    "file": "assets/_.b56dfb55.js",
+    "src": "src/components/carousel/_.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "index.css": {
+    "file": "assets/index.d3993bca.css",
+    "src": "index.css"
+  }
+}

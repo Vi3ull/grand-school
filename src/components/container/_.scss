@@ -1,0 +1,8 @@
+.container {
+  max-width: 100%;
+  padding: 0 var(--container-padding);
+
+  @media screen and (min-width: map-get($screens, xl)) {
+    --container-padding: #{em(160)};
+  }
+}
